@@ -1,0 +1,207 @@
+{
+	"id": "garhis-grotto-crafting-system",
+	"title": "Garhi's Grotto - Crafting System",
+	"description": "A split off module to house everything related to crafting.",
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "12",
+		"verified": "12"
+	},
+	"authors": [
+		{
+			"name": "Garhi",
+			"email": "garhi@garhisgrotto.com",
+			"url": "http://www.garhisgrotto.com",
+			"discord": "garhi",
+			"flags": {}
+		}
+	],
+	"packs": [
+		{
+			"name": "gg-craft-actor",
+			"label": "GG - Crafting Merchants",
+			"path": "packs/craft-actor",
+			"type": "Actor",
+			"system": "dnd5e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {
+				"dnd5e": {
+					"types": [
+						"npc"
+					]
+				}
+			}
+		},
+		{
+			"name": "gg-craft-item",
+			"label": "GG - Crafted Items",
+			"path": "packs/craft-item",
+			"type": "Item",
+			"system": "dnd5e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {
+				"dnd5e": {
+					"types": [
+						"weapon",
+						"equipment",
+						"consumable",
+						"tool",
+						"loot",
+						"container"
+					]
+				}
+			}
+		},
+		{
+			"name": "gg-craft-gather",
+			"label": "GG - Gathering",
+			"path": "packs/craft-gather",
+			"type": "Item",
+			"system": "dnd5e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {
+				"dnd5e": {
+					"types": [
+						"loot"
+					]
+				}
+			}
+		},
+		{
+			"name": "gg-craft-harvest",
+			"label": "GG - Harvesting",
+			"path": "packs/craft-harvest",
+			"type": "Item",
+			"system": "dnd5e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {
+				"dnd5e": {
+					"types": [
+						"loot"
+					]
+				}
+			}
+		},
+		{
+			"name": "gg-craft-material",
+			"label": "GG - Raw Materials",
+			"path": "packs/craft-material",
+			"type": "Item",
+			"system": "dnd5e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {
+				"dnd5e": {
+					"types": [
+						"loot"
+					]
+				}
+			}
+		},
+		{
+			"name": "gg-craft-journal",
+			"label": "GG - Crafting System",
+			"path": "packs/craft-journal",
+			"type": "JournalEntry",
+			"system": "dnd5e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "gg-craft-table",
+			"label": "GG - Crafting Tables",
+			"path": "packs/craft-table",
+			"type": "RollTable",
+			"system": "dnd5e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "gg-craft-macro",
+			"label": "GG - Crafting Macros",
+			"path": "packs/craft-macro",
+			"type": "Macro",
+			"system": "dnd5e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		}    
+	],
+	"packFolders": [
+		{
+			"name": "GG - Crafting System",
+			"sorting": "m",
+			"color": "#7877e7",
+			"packs": [
+				"gg-craft-item",
+				"gg-craft-material",
+				"gg-craft-gather",
+				"gg-craft-harvest",
+				"gg-craft-journal",
+				"gg-craft-table",
+				"gg-craft-macro"
+			],
+			"folders": []
+		}
+	],
+	"relationships":{
+		"recommends": [
+			{
+				"id": "garhis-grotto-module",
+				"type": "module",
+				"compatibility": {}
+			}
+		],
+		"systems": [
+			{
+				"id": "dnd5e",
+				"type": "system",
+				"compatibility": {
+					"minimum": "3.0.0",
+					"verified": "3.3.1",
+					"maximum": "3.9.9"
+				}
+			}
+		],
+		"requires": []
+	},
+	"flags": {
+		"hotReload": {
+			"extensions": ["css", "hbs", "json"],
+			"paths": ["templates", "styles", "lang"]
+		}
+	},
+	"media": [
+		{
+			"type": "setup",
+			"url": "modules/garhis-grotto-module/assets/art/branding/garhis-grotto-logo.webp",
+			"loop": false,
+			"flags": {}
+		}
+	],
+	"readme": "",
+	"changelog": "",
+	"url": "",
+	"bugs": "",
+	"manifest": "",
+	"download": ""
+}
