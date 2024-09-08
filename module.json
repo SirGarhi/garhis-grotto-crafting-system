@@ -1,8 +1,8 @@
 {
 	"id": "garhis-grotto-crafting-system",
-	"title": "Garhi's Grotto - Crafting System",
+	"title": "Garhi's Grotto: Crafting System",
 	"description": "A split off module to house everything related to crafting.",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"compatibility": {
 		"minimum": "12",
 		"verified": "12"
@@ -17,9 +17,8 @@
 		}
 	],
 	"packs": [
-		{
-			"name": "gg-craft-actor",
-			"label": "GG - Crafting Merchants",
+		{	"name": "gg-craft-actor",
+			"label": "GG | Merchants|Artisans",
 			"path": "packs/craft-actor",
 			"type": "Actor",
 			"system": "dnd5e",
@@ -35,9 +34,8 @@
 				}
 			}
 		},
-		{
-			"name": "gg-craft-item",
-			"label": "GG - Crafted Items",
+		{	"name": "gg-craft-item",
+			"label": "GG | Item: Crafting",
 			"path": "packs/craft-item",
 			"type": "Item",
 			"system": "dnd5e",
@@ -58,9 +56,8 @@
 				}
 			}
 		},
-		{
-			"name": "gg-craft-gather",
-			"label": "GG - Gathering",
+		{	"name": "gg-craft-gather",
+			"label": "GG | Item: Gathering",
 			"path": "packs/craft-gather",
 			"type": "Item",
 			"system": "dnd5e",
@@ -76,9 +73,8 @@
 				}
 			}
 		},
-		{
-			"name": "gg-craft-harvest",
-			"label": "GG - Harvesting",
+		{	"name": "gg-craft-harvest",
+			"label": "GG | Item: Harvesting",
 			"path": "packs/craft-harvest",
 			"type": "Item",
 			"system": "dnd5e",
@@ -94,9 +90,8 @@
 				}
 			}
 		},
-		{
-			"name": "gg-craft-material",
-			"label": "GG - Raw Materials",
+		{	"name": "gg-craft-material",
+			"label": "GG | Item: Material",
 			"path": "packs/craft-material",
 			"type": "Item",
 			"system": "dnd5e",
@@ -112,10 +107,9 @@
 				}
 			}
 		},
-		{
-			"name": "gg-craft-journal",
-			"label": "GG - Crafting System",
-			"path": "packs/craft-journal",
+		{	"name": "gg-craft-reference",
+			"label": "GG | Reference: Crafting",
+			"path": "packs/craft-reference",
 			"type": "JournalEntry",
 			"system": "dnd5e",
 			"ownership": {
@@ -123,9 +117,8 @@
 				"ASSISTANT": "OWNER"
 			}
 		},
-		{
-			"name": "gg-craft-table",
-			"label": "GG - Crafting Tables",
+		{	"name": "gg-craft-table",
+			"label": "GG | Table: Crafting",
 			"path": "packs/craft-table",
 			"type": "RollTable",
 			"system": "dnd5e",
@@ -134,9 +127,8 @@
 				"ASSISTANT": "OWNER"
 			}
 		},
-		{
-			"name": "gg-craft-macro",
-			"label": "GG - Crafting Macros",
+		{	"name": "gg-craft-macro",
+			"label": "GG | Macro: Crafting",
 			"path": "packs/craft-macro",
 			"type": "Macro",
 			"system": "dnd5e",
@@ -144,36 +136,18 @@
 				"PLAYER": "OBSERVER",
 				"ASSISTANT": "OWNER"
 			}
-		}    
-	],
-	"packFolders": [
-		{
-			"name": "GG - Crafting System",
-			"sorting": "m",
-			"color": "#7877e7",
-			"packs": [
-				"gg-craft-item",
-				"gg-craft-material",
-				"gg-craft-gather",
-				"gg-craft-harvest",
-				"gg-craft-journal",
-				"gg-craft-table",
-				"gg-craft-macro"
-			],
-			"folders": []
 		}
 	],
+	"packFolders": [],
 	"relationships":{
 		"recommends": [
-			{
-				"id": "garhis-grotto-module",
+			{	"id": "garhis-grotto-core",
 				"type": "module",
 				"compatibility": {}
 			}
 		],
 		"systems": [
-			{
-				"id": "dnd5e",
+			{	"id": "dnd5e",
 				"type": "system",
 				"compatibility": {
 					"minimum": "3.0.0",
@@ -185,23 +159,18 @@
 		"requires": []
 	},
 	"flags": {
-		"hotReload": {
-			"extensions": ["css", "hbs", "json"],
-			"paths": ["templates", "styles", "lang"]
-		}
 	},
 	"media": [
-		{
-			"type": "setup",
-			"url": "modules/garhis-grotto-module/assets/art/branding/garhis-grotto-logo.webp",
+		{	"type": "setup",
+			"url": "modules/garhis-grotto-core/assets/art/branding/garhis-grotto-logo.webp",
 			"loop": false,
 			"flags": {}
 		}
 	],
-	"readme": "",
-	"changelog": "",
-	"url": "",
-	"bugs": "",
+	"url": "https://www.garhisgrotto.com/",
+	"readme": "https://github.com/SirGarhi/garhis-grotto-crafting-system/blob/prime/README.md",
+	"changelog": "https://github.com/SirGarhi/garhis-grotto-crafting-system/blob/prime/CHANGELOG.md",
+	"bugs": "https://github.com/SirGarhi/garhis-grotto-crafting-system/issues",
 	"manifest": "",
 	"download": ""
 }
